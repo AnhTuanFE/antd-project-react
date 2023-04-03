@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+* {
+  box-sizing: border-box;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -24,10 +26,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +33,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+.nav_Bar {
+  display: flex;
+}
+
+.nav_item {
+  margin: 10px 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+.ant-layout-header {
+  background-color: white;
+}
+.custom-button--small {
+  background-color: blue;
+}
+.custom-button--large {
+  background-color: red;
+}
+.gutter-row {
+  padding: 10px 0px;
+}
+.black_font {
+  color: black;
 }
