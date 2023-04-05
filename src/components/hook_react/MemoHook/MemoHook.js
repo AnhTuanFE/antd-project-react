@@ -9,6 +9,7 @@ function MemoHook({ onIncrease }) {
       </div>
       <div>
         <input type="image" alt="image"></input>
+        <input />
       </div>
     </>
   );
