@@ -1,19 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import { Layout, Space, Menu } from "antd";
-import { Col, Divider, Row } from "antd";
-import GridProduct from "./components/GridProduct";
+import { Layout, Menu } from "antd";
+import GridProduct from "./components/gridProduct/GridProduct";
 import Home from "./components/Home";
-const { Header, Footer, Sider, Content } = Layout;
-
-const headerStyle = {
-  textAlign: "center",
-  color: "#fff",
-  height: 64,
-  paddingInline: 50,
-  lineHeight: "64px",
-  border: "1px solid #000",
-};
+import LearnHook from "./components/hook_react/LearnHook";
+const { Header } = Layout;
 
 function App() {
   return (
@@ -54,8 +45,8 @@ function App() {
                 </Link>
               </Menu.Item>
               <Menu.Item key="addProduct">
-                <Link className="nav_item" to="/addproduct">
-                  Add product
+                <Link className="nav_item" to="/hook">
+                  test hook
                 </Link>
               </Menu.Item>
             </Menu>
@@ -64,6 +55,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<GridProduct />} />
+          <Route path="/hook" element={<LearnHook />} />
         </Routes>
       </Router>
     </div>

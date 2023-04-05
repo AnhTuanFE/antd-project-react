@@ -1,11 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
-import { Layout, Space, Menu } from "antd";
+import { Layout, Space } from "antd";
 import { Col, Divider, Row } from "antd";
 import clsx from "clsx";
 import styles from "./Home.module.css";
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Footer, Sider, Content } = Layout;
 
 const style = {
   background: "#0092ff",
